@@ -1,0 +1,164 @@
+ /* General */
+ :root {
+   --violet: hsl(257, 40%, 49%);
+   --soft-magenta: hsl(300, 69%, 71%);
+   --white: #fff;
+   --headings-font: 'Poppins', sans-serif;
+   --body-font: 'Open Sans', sans-serif;
+ }
+
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+
+ body {
+   background: url("../images/bg-desktop.svg"),var(--violet);
+   background-size: cover;
+   background-repeat: no-repeat;
+   padding: 5%;
+   overflow: hidden;
+   color: var(--white);
+   font-family: var(--body-font);
+ }
+
+ header img {
+   width: max(15%, 200px);
+ }
+ header {
+   margin-bottom: 50px;
+ }
+
+ .content {
+   display: flex;
+   gap: 1rem;
+   justify-content: space-between;
+ }
+
+ .left-side {
+   flex: 1 90%;
+ }
+
+ .left-side img{
+   width: 95%;
+ }
+
+ .right-side {
+   flex: 1 70%;
+   padding: 4%;
+ }
+
+h1 {
+  font-family: var(--headings-font);
+  font-size: 2.2rem;
+  margin-bottom: 1.2rem;
+}
+
+p {
+  margin-bottom: 1.2rem;
+
+}
+
+
+ .btn {
+   color: var(--violet);
+   background-color: var(--white);
+   padding: 15px 50px;
+   font-size: 18px;
+   border: 1px solid var(--white);
+   border-radius: 50px;
+   box-shadow: 0 7px 13px rgba(0, 0, 0, 0.1);
+ }
+
+ .btn:hover {
+   background-color: var(--soft-magenta);
+   color: var(--white);
+   border: 1px solid var(--soft-magenta);
+ }
+
+
+ /* Social */
+ .social {
+   margin: -20px 90px 0 50px;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+
+ }
+
+ .social a {
+   text-decoration: none;
+ }
+
+  .fab{
+   margin-left: 15px;
+   position: relative;
+   color: var(--white);
+   width: 40px;
+   height: 40px;
+   border: 1px solid var(--white);
+   border-radius: 50%;
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .fab:hover {
+   color: var(--soft-magenta);
+   border: 1px solid var(--soft-magenta);
+
+ }
+
+
+
+ /* Footer */
+ .attribution {
+   font-size: 11px;
+   text-align: center;
+ }
+
+ .attribution a {
+   color: var(--soft-magenta);
+ }
+
+ .attribution a:hover {
+   opacity: 0.7;
+ }
+
+
+
+ /* Media */
+
+ @media (max-width: 768px) {
+
+   body {
+     background: url("../images/bg-mobile.svg"),var(--violet);
+     background-size: cover;
+     background-repeat: no-repeat;
+     padding: 5%;
+     overflow: hidden;
+     text-align: center;
+   }
+
+   header {
+     text-align: left;
+   }
+
+   .content {
+     flex-direction: column;
+   }
+
+   h1 {
+     font-size: 1.75rem;
+   }
+
+   .social {
+     margin-top: 2.2rem;
+   }
+
+   footer {
+     margin-top: 1rem;
+   }
+
+ }
