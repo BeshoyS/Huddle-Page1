@@ -137,7 +137,7 @@ p {
      background-size: cover;
      background-repeat: no-repeat;
      padding: 5%;
-     overflow: hidden;
+     overflow: auto;
      text-align: center;
    }
 
