@@ -155,6 +155,7 @@ p {
 
    .social {
      margin-top: 2.2rem;
+     justify-content: center;
    }
 
    footer {
